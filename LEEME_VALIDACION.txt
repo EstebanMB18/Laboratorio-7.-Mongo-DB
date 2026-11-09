@@ -1,0 +1,16 @@
+Laboratorio 7 - Variante compatible con MongoDB actual
+
+IMPORTANTE: Esta variante conserva entidades con anotaciones JPA/EclipseLink para estudio,
+pero ejecuta CRUD mediante el driver oficial MongoDB 4.11.5, no mediante JPA.
+Esto resuelve el protocolo OP_QUERY obsoleto, pero NO cumple estrictamente
+el objetivo de persistencia JPA sobre NoSQL. Confirmar con el docente.
+
+1. Descomprimir en carpeta nueva; abrir NetBeans JDK 8; Clean and Build.
+2. Ejecutar com.example.Main. Debe decir MongoDB moderno conectado.
+3. POST http://localhost:8080/competitors con JSON del laboratorio.
+4. GET http://localhost:8080/competitors
+5. GET http://localhost:8080/productos
+6. GET http://localhost:8080/competitors/names/a
+7. Verificar colecciones COMPETITOR y PRODUCTO en ArquiSW mediante Compass.
+
+No mezclar classpath de la version anterior. Detener la aplicacion antigua antes de ejecutar.
